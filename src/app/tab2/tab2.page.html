@@ -1,17 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      About Us
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-text color="primary">
+    <h2>Nama : Tifany Susanto</h2>
+    <h3>Nrp : c14180073 </h3>
+  </ion-text>
+    <br>
+    <p>Welcome to games TEBAK ANGKA!</p>
+    <p>Tebaklah angka dari 0-10</p> <br>
+    <ion-item>
+      <ion-label position="fixed">input here</ion-label>
+      <ion-input [(ngModel)]="tebak"></ion-input>
+    </ion-item>
+    <ion-button (click)="random()" style="margin-left: 10px;">CHECK!</ion-button>
+    <br><br>
+    {{output}}
+    <br><br>
 </ion-content>

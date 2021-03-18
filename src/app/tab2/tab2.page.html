@@ -21,5 +21,11 @@
     <ion-button (click)="random()" style="margin-left: 10px;">CHECK!</ion-button>
     <br><br>
     {{output}}
+    <ng-template *ngIf="foto; then templatetrue; else templatefalse">
+    </ng-template>
+
+    <ng-template #templatetrue>
+      <ion-img src="https://p0.pikist.com/photos/751/41/cat-pet-domestic-feline-fur-gray-almost-the-head-of-the-profile.jpg"></ion-img>
+    </ng-template>
     <br><br>
 </ion-content>
